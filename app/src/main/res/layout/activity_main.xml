@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:columnCount="6"
+    android:rowCount="6">
+
+    <View
+        android:id="@+id/cell1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_column="0"
+        android:layout_row="0"/>
+
+    <View
+        android:id="@+id/cell2"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_column="2"
+        android:layout_row="0"/>
+
+    <View
+        android:id="@+id/cell3"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_column="4"
+        android:layout_row="0"/>
+
+    <View
+        android:id="@+id/cell4"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_column="0"
+        android:layout_row="2"/>
+
+    <View
+        android:id="@+id/cell5"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_column="2"
+        android:layout_row="2"/>
+
+    <View
+        android:id="@+id/cell6"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_column="4"
+        android:layout_row="2"/>
+
+    <View
+        android:id="@+id/cell7"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_column="0"
+        android:layout_row="4"/>
+
+    <View
+        android:id="@+id/cell8"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_column="2"
+        android:layout_row="4"/>
+
+    <View
+        android:id="@+id/cell9"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:layout_width="@dimen/cell_size"
+        android:layout_height="@dimen/cell_size"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_column="4"
+        android:layout_row="4"/>
+</GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/default_margin"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="@dimen/drawable_size"
+            android:layout_height="@dimen/drawable_size"
+            android:background="@drawable/cross"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/cross_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/default_textSize"
+            android:layout_marginStart="@dimen/text_margin"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="@dimen/drawable_size"
+            android:layout_height="@dimen/drawable_size"
+            android:background="@drawable/circle"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/start_margin"/>
+
+        <TextView
+            android:id="@+id/circle_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_gravity="center"
+            android:textSize="@dimen/default_textSize"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
+
